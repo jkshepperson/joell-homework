@@ -1,0 +1,45 @@
+body {
+	font-family: sans-serif;
+	font-size: 36px;
+}
+
+label {
+	font-size: 24px;
+	font-weight: bolder;
+	color: #666666;
+	padding: 10px;
+}
+
+h1 {
+	text-align: center;
+	padding: 10px;
+	font-size: 32px;
+}
+
+
+#fahrenheit {
+	padding: 10px;
+	margin: 5px;
+	font-size: 16px;
+	font-style: italic;
+}
+
+#submitButton {
+	background-color: #006400;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+p {
+	color: #666666;
+	font-size: 24px;
+}
+
+p #celsiusNumber {
+	color: black;
+}
