@@ -1,33 +1,95 @@
 $(document).ready(function() {
 
-$('form').submit(trimWord);
+$('#submit-btn').click(grabCity);
 
-function trimWord() {
-    event.preventDefault();
-    var enteredValue = $('#city-type').val();
-    var trimmedValue = enteredValue.trim();
-    $('#city-type').val(trimmedValue);
-    var newValue = $('#city-type').val(trimmedValue);
+function grabCity() {
+	event.preventDefault();
+	var city = $('#city-type').val();
+
 }
 
-$('#submit-btn').click(compareCity);
+$('#submit-btn').click(nyc);
 
-function compareCity () {
-	if(newValue = "New York") {
-	// code to be executed if condition is true
-	} 
-	else if(newValue = "New York City"{
-		// code to be executed if condition is false
-	}
-	else if(newValue = "NYC"{
-		// code to be executed if condition is false
-	}
-	else {
-		// code to be executed if condition is false
+function nyc() {
+	if(city === "New York") {
+		console.log("newYork");
+		$('body').css('background-image', 'url(/images/nyc.jpg)');
+	} else if (city === "NYC") {
+		console.log("newYork");
+		$('body').css('background-image', 'url(/images/nyc.jpg)');
+	} else if (city === "New York City") {
+		console.log("newYork");
+		$('body').css('background-image', 'url(/images/nyc.jpg)');
+	} else {
+		console.log("wrong");
 	}
 }
+
+$('#submit-btn').click(aus);
+
+function aus() {
+	if(city === "Austin") {
+		console.log("austinTx");
+		$('body').css('background-image', 'url(/images/austin.jpg)');
+	} else if (city === "ATX") {
+		console.log("austinTx");
+		$('body').css('background-image', 'url(/images/austin.jpg)');
+	} else {
+		console.log("wrong");
+	}
+}
+
+$('#submit-btn').click(la);
+
+function la() {
+	if(city === "LA") {
+		console.log("losang");
+		$('body').css('background-image', 'url(/images/la.jpg)');
+	} else if (city === "LAX") {
+		console.log("losang");
+		$('body').css('background-image', 'url(/images/la.jpg)');
+	} else if (city === "Los Angeles") {
+		console.log("losang");
+		$('body').css('background-image', 'url(/images/la.jpg)');
+	} else {
+		console.log("wrong");
+	}
+}
+
+$('#submit-btn').click(sanFran);
+
+function sanFran() {
+	if(city === "San Francisco") {
+		console.log("sf");
+		$('body').css('background-image', 'url(/images/sf.jpg)');
+	} else if (city === "SF") {
+		console.log("lsf");
+		$('body').css('background-image', 'url(/images/sf.jpg)');
+	} else if (city === "Bay Area") {
+		console.log("lsf");
+		$('body').css('background-image', 'url(/images/sf.jpg)');
+	} else {
+		console.log("wrong");
+	}
+}
+
+$('#submit-btn').click(sydney);
+
+function sydney() {
+	if(city === "Sydney") {
+		console.log("syd");
+		$('body').css('background-image', 'url(/images/sydney.jpg)');
+	} else if (city === "SYD") {
+		console.log("syd");
+		$('body').css('background-image', 'url(/images/sydney.jpg)');
+	} else {
+		console.log("wrong");
+	}
+}
+
 
 });
+
 /*
 
 When a user clicks the submit button
