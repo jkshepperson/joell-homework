@@ -1,34 +1,47 @@
 $(document).ready(function() {
 
+// set the dropdown values and create variables for the new dropdown choices and values of those choices
 	var dropdown = ["NYC", "SF", "LAX", "ATX", "SYD"];
 	var newOption = '';
-	var cityChoice = $('option').val();
 
+// fill dropdown list with choices from the array by appending a new option row
 	for (var i=0;i<dropdown.length;i++) {
-   		newOption = '<option value="'+ dropdown[i] + '">' + dropdown[i] + '</option>';
+   		newOption = ('<option value="'+ dropdown[i] + '">' + dropdown[i] + '</option>');
    		$('#cities').append(newOption);
-	}
+   	}
 
-	$('option').click(changeCity);
+ });
+
+// Note: this section seems to break the other good work of populating the dropdown so I wrote it in the comments
+
+/* 
+create event to notify when it's time to change the background picture
+
+	$('cityChoice').submit(changeCity);
+
+change the background based on which option the user selects
 
 	function changeCity () {
-		if (cityChoice == "nyc") {
+		var chosenCity = $('#cities').val();
+
+		if (chosenCity == "nyc") {
 			$("body").css('background-image', 'url(images/nyc.jpg)');
 		
-		} else if (cityChoice == 'sf') {
+		} else if (chosenCity == 'sf') {
 			$("body").css('background-image', 'url(images/sf.jpg)');
 		
-		} else if (cityChoice == 'lax') {
+		} else if (chosenCity == 'lax') {
 			$("body").css('background-image', 'url(images/la.jpg)');
 
-		} else if (cityChoice == 'atx') {
+		} else if (chosenCity == 'atx') {
 			$("body").css('background-image', 'url(images/austin.jpg)');
 		
-		} else if (cityChoice == 'syd') {
+		} else if (chosenCity == 'syd') {
 			$("body").css('background-image', 'url(images/sydney.jpg)');
 		
 		} else {
-			alert.("Make Selection");
+			console.log("help");
 		}
 
 });
+*/
