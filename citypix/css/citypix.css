@@ -142,3 +142,11 @@ header {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+form {
+  font: sans-serif;
+  font-size: 40px;
+  width: 100px;
+  padding: 5px 15px 5px 5px;
+  margin-left: 45%;
+}
